@@ -1,19 +1,128 @@
 <resources>
     <string name="app_name">FrameDataApp</string>
+    <string name="textview">Leona Heidern</string>
     <string-array name="move_names">
         <item>Close A</item>
+        <item>Close B</item>
+        <item>Close C</item>
+        <item>Close D</item>
+        <item>Stand A</item>
+        <item>Stand B</item>
+        <item>Stand C</item>
+        <item>Stand D</item>
+        <item>Crouch A</item>
+        <item>Crouch B</item>
+        <item>Crouch C</item>
+        <item>Crouch D</item>
+        <item>Stand CD</item>
+        <item>Strike Arch</item>
+        <item>Light Moon Slasher</item>
+        <item>Heavy Moon Slasher</item>
+        <item>Light Baltic Launcher</item>
+        <item>Earring Bomb</item>
+        <item>Heart Attack</item>
+        <item>Light Grand Saber</item>
+        <item>Heavy Grand Saber</item>
+        <item>Light Rebel Spark</item>
+        <item>Heavy Rebel Spark</item>
+        <item>Grateful Dead</item>
+        <item>V Slasher</item>
+        <item>MAX V Slasher</item>
+        <item>MAX Rebel Spark</item>
+        <item>Dead End Inferno</item>
 
     </string-array>
     <string-array name="move_inputs">
         <item>Close A</item>
+        <item>Close B</item>
+        <item>Close C</item>
+        <item>Close D</item>
+        <item>Stand A</item>
+        <item>Stand B</item>
+        <item>Stand C</item>
+        <item>Stand D</item>
+        <item>Crouch A</item>
+        <item>Crouch B</item>
+        <item>Crouch C</item>
+        <item>Crouch D</item>
+        <item>Stand CD</item>
+        <item>b/f B</item>
+        <item>Charge d~u A</item>
+        <item>Charge d~u C</item>
+        <item>Charge b~f A</item>
+        <item>qcb B/D</item>
+        <item>rdp B/D</item>
+        <item>Charge b~f B</item>
+        <item>Charge b~f D</item>
+        <item>qcb hcf B</item>
+        <item>qcb hcf D</item>
+        <item>qcf qcf A/C</item>
+        <item>in air, qcf hcb A/C</item>
+        <item>in air, qcf hcb A+C</item>
+        <item>while Orochi Leona, qcb hcf B+D</item>
+        <item>qcf hcb B+D</item>
 
     </string-array>
     <string-array name="move_speeds">
         <item>4f</item>
+        <item>6f</item>
+        <item>8f</item>
+        <item>7f</item>
+        <item>4f</item>
+        <item>5f</item>
+        <item>10f</item>
+        <item>15f</item>
+        <item>5f</item>
+        <item>4f</item>
+        <item>4f</item>
+        <item>8f</item>
+        <item>19f</item>
+        <item>26f</item>
+        <item>7f</item>
+        <item>9f</item>
+        <item>25f</item>
+        <item>Unknown</item>
+        <item>14f</item>
+        <item>20f</item>
+        <item>21f</item>
+        <item>13f</item>
+        <item>13f</item>
+        <item>10f</item>
+        <item>Unknown</item>
+        <item>Unknown</item>
+        <item>17f</item>
+        <item>16f</item>
 
     </string-array>
     <string-array name="move_on_blocks">
         <item>0</item>
+        <item>-1</item>
+        <item>1st Hit -8, 2nd Hit -4</item>
+        <item>1st Hit +7, 2nd Hit -3</item>
+        <item>0</item>
+        <item>-6</item>
+        <item>-7</item>
+        <item>-10</item>
+        <item>-6</item>
+        <item>-3</item>
+        <item>-16</item>
+        <item>-11</item>
+        <item>-7</item>
+        <item>-3</item>
+        <item>-17</item>
+        <item>-18</item>
+        <item>+16</item>
+        <item>+10</item>
+        <item>-14</item>
+        <item>+2</item>
+        <item>+2</item>
+        <item>-25</item>
+        <item>-27</item>
+        <item>(Command Grab)</item>
+        <item>Variable</item>
+        <item>Variable</item>
+        <item>-22</item>
+        <item>+2</item>
 
     </string-array>
 </resources>
