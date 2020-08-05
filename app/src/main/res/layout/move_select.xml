@@ -7,12 +7,12 @@
     tools:context=".MainActivity">
 
     <ListView
-        android:id="@+id/myListView"
+        android:id="@+id/moveListView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="330dp"
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
         android:layout_marginBottom="1dp"
@@ -39,10 +39,20 @@
         android:id="@+id/charPortraitImageView"
         android:layout_width="222dp"
         android:layout_height="485dp"
-        app:layout_constraintBottom_toTopOf="@+id/myListView"
+        android:contentDescription="@android:string/paste"
+        app:layout_constraintBottom_toTopOf="@+id/titleListView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/charNameTextView"
         tools:srcCompat="@drawable/leona_portrait" />
+
+    <ListView
+        android:id="@+id/titleListView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/moveListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

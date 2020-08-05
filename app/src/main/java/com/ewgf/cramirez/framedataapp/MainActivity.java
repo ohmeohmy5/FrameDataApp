@@ -7,13 +7,13 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.Display;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ListView myListView;
+    ListView moveListView;
+    ListView titleListView;
     String[] move_names;
     String[] move_inputs;
     String[] move_speeds;
@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.move_select);
 
         Resources res = getResources();
-        myListView = (ListView) findViewById(R.id.myListView);
+        moveListView = (ListView) findViewById(R.id.moveListView);
+        titleListView = (ListView) findViewById(R.id.titleListView);
         move_names = res.getStringArray(R.array.move_names);
         move_inputs = res.getStringArray(R.array.move_inputs);
         move_speeds = res.getStringArray(R.array.move_speeds);
@@ -34,10 +35,31 @@ public class MainActivity extends AppCompatActivity {
         char_portrait = R.drawable.leona_portrait;
 
         ItemAdapter itemAdapter = new ItemAdapter(this, move_names, move_inputs, move_speeds, move_on_blocks);
-        myListView.setAdapter(itemAdapter);
+        moveListView.setAdapter(itemAdapter);
+
+        String[][] labels = arrayMaker();
+        ItemAdapter labelItemAdapter = new ItemAdapter(this, labels[0], labels[1], labels[2], labels[3]);
+        titleListView.setAdapter(labelItemAdapter);
 
         ImageView img = (ImageView) findViewById(R.id.charPortraitImageView);
         scaleImage(img, char_portrait);
+
+    }
+
+    private String[][] arrayMaker()
+    {
+        String[] a1 = new String[1];
+        String[] a2 = new String[1];
+        String[] a3 = new String[1];
+        String[] a4 = new String[1];
+        a1[0] = "Name";
+        a2[0] = "Input";
+        a3[0] = "Speed";
+        a4[0] = "On Block";
+
+        String[][] returnS = {a1, a2, a3, a4};
+        return returnS;
+
 
     }
 
